@@ -4,93 +4,37 @@ export default function Example() {
         <div className="mx-auto max-w-7xl px-6 lg:px8">
           <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
             <div className="bg-gray-700/5 p-8 sm:p-10">
-              <p>Hallo</p>
-            </div>
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
+              <p>Zeiten</p>
             </div>
 
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+              <p>Preis pro Stunde </p> <p>Winter / Sommer</p>
             </div>
 
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+              <p>ABO-Preise Winter Saison</p> <p> (ABO-Preise Sommer auf Anfrage;</p>  <p>Buchung sofort möglich)</p>
             </div>
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+              <p> Montag bis Freitag</p> <p>09:00-15:00 </p> <p>15:00-22:00</p>
             </div>
-
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-                alt="Reform"
-                width={158}
-                height={48}
-              />
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+              <p className="text-neutral-100"> füller</p><p>19€ / 10€</p> <p> 26€ / 15€</p>
+            </div>
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+            <p className="text-neutral-100"> füller</p><p>420€ </p> <p> 620€</p>
+            </div>
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+              <p>Samstag & Sonntag </p> <p>09:00-15:00 </p> <p>15:00-22:00</p>
+            </div>
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+            <p className="text-neutral-100"> füller</p><p> 16€ / 10€</p> <p> 19€ / 15€</p>
             </div>
 
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-                alt="Tuple"
-                width={158}
-                height={48}
-              />
+            <div className="bg-gray-700/5 p-8 sm:p-10">
+            <p className="text-neutral-100"> füller</p><p>390€</p> <p> 520€</p>
             </div>
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/laravel-logo-gray-900.svg"
-                alt="Laravel"
-                width={158}
-                height={48}
-              />
-            </div>
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-                alt="SavvyCal"
-                width={158}
-                height={48}
-              />
-            </div>
-            <div className="bg-gray-400/5 p-6 sm:p-10">
-              <img
-                className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-                alt="Statamic"
-                width={158}
-                height={48}
-              />
-            </div>
+            
+            
           </div>
         </div>
       </div>
