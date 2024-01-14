@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-export default function Example() {
+export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -45,12 +45,12 @@ export default function Example() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-10">
               <a
-                href="#"
+                href="platz buchen"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Platz buchen
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="preise" className="text-sm font-semibold leading-6 text-gray-900">
                 Preise <span aria-hidden="true">→</span>
               </a>
             </div>
