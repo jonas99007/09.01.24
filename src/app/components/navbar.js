@@ -3,17 +3,20 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { usePathname } from 'next/navigation'
 
  
 const navigation = [
   { name: 'Galerie', href: '/galerie' },
   { name: 'Über uns', href: '/überuns' },
-  { name: 'Kontakt', href: 'kontakt' },
-  { name: 'Impressum', href: 'impressum' },
+  { name: 'Kontakt', href: '/kontakt' },
+  { name: 'Impressum', href: '/impressum' },
+  { name: 'Preise', href: '/preise' },
 ] 
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname();
 
   return (
     <div >
@@ -39,19 +42,20 @@ export default function Navbar() {
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+              </button>
+</div>
+<div className="hidden lg:flex lg:gap-x-12">
   {navigation.map((item) => (
-    <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-slate-200 hover:text-slate-100">
+    <a key={item.name} href={item.href} className={`text-sm font-semibold leading-6 text-slate-200 hover:text-slate-100 ${pathname === '/galerie' ? 'text-sky-400' : ''}`}>
       {item.name}
     </a>
   ))}
 </div>
+
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
-            </a> */}
+            </a>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

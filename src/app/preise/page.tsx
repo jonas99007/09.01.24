@@ -1,7 +1,13 @@
-const navigation = [
+"use client"
 
-{ name: 'Sprechen sie mit uns', href: 'kontakt' },
-]
+const navigation =  [
+        
+{ name: 'Galerie', href: 'galerie' },
+{ name: 'Über uns', href: 'überuns' },
+{ name: 'Kontakt', href: 'kontakt' },
+{ name: 'Impressum', href: 'impressum' },
+{ name: 'Preise', href: 'Preise' },
+ ] 
 export default function Example() {
     return (
         
@@ -41,11 +47,26 @@ export default function Example() {
         
           </div>
             
-          <div> <style> "text-neutral-100 opacity-0"</style> <p>...</p></div>
+        {/* <div> <style> "text-neutral-100 opacity-0"</style> <p>...</p>
+        </div> */}
+       <div className= "py-4">
         <div className="border-b border-gray-200 bg-gray-300/90 px-4 py-5 sm:px-6 sm:mx-0 sm:rounded-2xl">
          <h1 className="text-neutral font-semibold leading-6 text-gray-900 ">Trainingsangebot : Einzel- oder Gruppenunterricht nach Absprache </h1>
            <h2> Bespannungsservice im Haus</h2> <p> Haben Sie Sonderwünsche? Sprechen Sie uns an.</p>
      </div>
+     </div>
+     <div className="py-4mt-10 flex items-center justify-center gap-x-10">
+              <a
+                href="platz buchen"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Platz buchen
+              </a>
+              <a href="kontakt" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Kontakt <span aria-hidden="true">→</span>
+              </a>
+            </div>
         </div>
       </div>
     )
