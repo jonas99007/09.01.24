@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
-              TSV Schwarz- Weiß Hannover
+              TSV Schwarz - Weiß Hannover
             </h1>
             <p className="mt-24 text-xl leading-8 text-gray-100">
             In unseren Tennishallen können Sie das ganze Jahr über auf fünf Hallenplätzen spielen ohne jegliche Mitgliedschaft.
